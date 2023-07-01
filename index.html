@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS File -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- BootStrap Files -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css.map">
+    <!--  Font Awesome -->
+    <link rel="stylesheet" href="./assets/css/all.min.css">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,600;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,500;1,700&family=Quicksand:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,100;1,400;1,700&family=Teko:wght@300;400;500;600;700&family=Varela+Round&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet" 
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,600;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,500;1,700&family=Quicksand:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,100;1,400;1,700&family=Varela+Round&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet"
+    />
+    <title>Fitness</title>
+    <link rel="shortcut icon" href="./assets/images/loder.png.webp" type="image/x-icon" />
+</head>
+<body>
+    <!-- 
+        PRELOADER
+    -->
+    <!-- <div class="preloader" id="preloader">
+        <img src="./assets/images/gs_animation_white.gif" class="img-fluid" alt="">
+    </div> -->
+    <!-- 
+        SCROLLTOP
+    -->
+    <div class="scroll_bg">
+        <button id="scroller" class="rounded-circle"><i class="fa-solid fa-turn-up fs-3"></i></button>
+    </div>
+    <!-- 
+        NAVBAR
+    -->
+    <nav class="navbar navbar-expand-lg navbar-expand-md">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="./assets/images/logo.png.webp" class="img-fluid" alt="logo">
+        </a>
+        <div class="w-100 d-flex justify-content-center align-items-center pt-2">
+            <button class="navbar-toggler text-end text-uppercase rounded-0 p-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="d-flex justify-content-end">
+                    <div class="navbar-toggler-style fs-3 fw-medium p-2 rounded-1 d-flex justify-content-end text-white">
+                        menu <i class="fa-solid fa-bars fs-6 navbar-toggler-icon ps-2"></i>
+                    </div>
+                </div>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#about">about</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#services">services</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#schedule">schedule</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#gallery">gallery</a>
+            </li>
+            <li class="menu">
+                <a class="nav-link dropdown-toggle" href="#recent" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    blog
+                </a>
+                <ul class="ani-menu">
+                        <div class="bg-menu">
+                            <li><a class="dropdown-item text-capitalize" href="#recent">blog</a></li>
+                            <li><a class="dropdown-item text-capitalize" href="#recent">blog detalis</a></li>
+                            <li><a class=" dropdown-item text-capitalize" href="#recent">elements</a></li>
+                        </div>
+                </ul>
+                </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#contact">contact</a>
+            </li>
+        </ul>
+            <div class="ms-4">
+                <a href="#"><button class="btn-main text-uppercase m-0">became a memeber</button></a>
+            </div>
+        </div>
+    </div>
+    </nav>
+    <!--
+    HEADER
+    -->
+    <header class="header-img" id="home">
+        <div class="container-fluid text-uppercase">
+            <div class="row algin-items-center">
+                <div class="col-md-6 col-lg-6">
+                    <div class="text">
+                        <p class="white-p mb-3">white patrick potter</p>
+                        <h1 class="main-h1 text-white lh-sm">
+                            SAFE BODY BUILDING PROPER SOLUTIONS THAT SAVES OUR VALUABLE TIME!
+                        </h1>
+                        <div class="btn-parent">
+                            <a href="#"><button class="btn-main text-uppercase mt-3">became a memeber</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6">
+                    <div class="video-oop d-flex justify-content-center align-items-center">
+                        <div class="video rounded-circle">
+                            <a class="vido rounded-circle" href="https://www.youtube.com/watch?v=up68UAfH0d0">
+                                <i class="fa-solid fa-circle-play fs-3 m-0 p-0 "></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+    <!-- 
+        ABOUT
+    -->
+    <section class="about" id="about">
+        <div class="container-fluid">
+            <div class="row align-items-center g-3">
+                <div class="col-lg-6 col-md-6">
+                    <div class="about-img d-flex justify-content-center">
+                        <img src="./assets/images/about.png.webp" class="img-fluid" alt=""    />
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="about-text">
+                        <div class="text">
+                            <p class="white-p mb-3">ABOUT OUR GYM</p>
+                            <h1 class="build-h1 lh-sm">
+                                SAFE BODY BUILDING PROPER SOLUTIONS THAT SAVES OUR VALUABLE TIME!
+                            </h1>
+                            <p class="text-dark brook fs-5">
+                                Brook presents your services with flexible, convenient and cdpose layouts. You can select your favorite layouts & elements for cular ts with unlimited ustomization possibilities. Pixel-perfect replication of the designers is intended.
+                            </p>
+                            <p class="text-dark brook fs-5">
+                                Brook presents your services with flexible, convefnient and chient anipurpose layouts. You can select your favorite layouts.
+                            </p>
+                        </div>
+                        <div class="btn-parent">
+                            <a href="#"><button class="btn-main text-uppercase mt-3">became a memeber</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 
+        SERVICE
+    -->
+    <section class="services" id="services">
+        <div class="container-fluid serv-padding">
+            <div class="text-ser w-100 pb-5">
+                <p class="white-p mb-3">OUR SERVICES FOR YOU</p>
+                <div class="row align-items-center">
+                    <div class="col-lg-8">
+                        <h1 class="main-h1 text-white w-75 m-0">PUSH YOUR LIMITS FORWARD WE OFFER TO YOU</h1>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="btn-parent d-flex justify-content-lg-end w-100">
+                            <a href="#"><button class="btn-main text-uppercase mt-3">more services</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center g-3">
+                <div class="col-lg-3 col-md-6">
+                    <div class="shap">
+                        <div class="icon mb-5">
+                            <i class="fa-solid fa-dumbbell"></i>
+                        </div>
+                        <div class="shap-text">
+                            <h2 class="mb-5 fs-4 qanutity text-uppercase">QUALITY EQUIPMENT</h2>
+                            <p class="fs-5 ser-p">
+                                The sea freight service has grown consider ably in recent years. We spend timetting to kn
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="shap">
+                        <div class="icon mb-5">
+                            <i class="fa-solid fa-heart-circle-check"></i>
+                        </div>
+                        <div class="shap-text">
+                            <h2 class="mb-5 fs-4 qanutity text-uppercase">healthy caring</h2>
+                            <p class="fs-5 ser-p">
+                                The sea freight service has grown consider ably in recent years. We spend timetting to kn
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="shap">
+                        <div class="icon mb-5">
+                            <i class="fa-solid fa-stopwatch-20"></i>
+                        </div>
+                        <div class="shap-text">
+                            <h2 class="mb-5 fs-4 qanutity text-uppercase">gym sarting</h2>
+                            <p class="fs-5 ser-p">
+                                The sea freight service has grown consider ably in recent years. We spend timetting to kn
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="shap">
+                        <div class="icon mb-5">
+                            <i class="fa-solid fa-person-running"></i>
+                        </div>
+                        <div class="shap-text">
+                            <h2 class="mb-5 fs-4 qanutity text-uppercase">let's go</h2>
+                            <p class="fs-5 ser-p">
+                                The sea freight service has grown consider ably in recent years. We spend timetting to kn
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 
+        CLIENT
+    -->
+    <section class="client position-relative" id="client">
+        <div class="container-fluid">
+            <div class="row align-items-center g-3 w-100">
+                <div class="col-lg-6 col-md-6">
+                    <div class="client-img d-flex justify-content-center">
+                        <img src="./assets/images/about2.png.webp" class="img-fluid" alt=""    />
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="client-text">
+                        <div class="text">
+                            <p class="white-p mb-3">CLIENT FEEDBACK</p>
+                            <h1 class="build-h1 lh-sm mb-5">
+                                WHAT OUR CLIENT THIK ABOUT OUR GYM
+                            </h1>
+                            <div id="carouselExampleInterval" class="carousel slide text-center" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active font-Barlow" data-bs-interval="10000">
+                                    Brook presents your services with flexible, convenient and cdpose layouts. You can select your favorite layouts & elements for cular ts with unlimited ustomization possibilities. Pixel-perfect replication of the designers is intended.
+                                    Brook presents your services with flexible, convenient and cdpose layouts. You can select your favorite layouts & elements for cular ts with unlimited ustomization possibilities. Pixel-perfect replication of the designers is intended.
+                                    <p class="special-p">Jhon smith</p>
+                                </div>
+                                <div class="carousel-item font-Barlow" data-bs-interval="2000">
+                                    Brook presents your services with flexible, convenient and cdpose layouts. You can select your favorite layouts & elements for cular ts with unlimited ustomization possibilities. Pixel-perfect replication of the designers is intended.
+                                    Brook presents your services with flexible, convenient and cdpose layouts. You can select your favorite layouts & elements for cular ts with unlimited ustomization possibilities. Pixel-perfect replication of the designers is intended.
+                                    <p class="special-p">Jhon smith</p>
+                                </div>
+                                <div class="carousel-item font-Barlow">
+                                    Brook presents your services with flexible, convenient and cdpose layouts. You can select your favorite layouts & elements for cular ts with unlimited ustomization possibilities. Pixel-perfect replication of the designers is intended.
+                                    Brook presents your services with flexible, convenient and cdpose layouts. You can select your favorite layouts & elements for cular ts with unlimited ustomization possibilities. Pixel-perfect replication of the designers is intended.
+                                    <p class="special-p">Jhon smith</p>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                                <i class="fa-solid fa-circle-arrow-left carousel-control-prev-icon" aria-hidden="true"></i>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                                <i class="fa-solid fa-circle-arrow-right carousel-control-next-icon" aria-hidden="true"></i>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/images/qutaion.png.webp" class="qutaion"  alt="" />
+    </section>
+    <!-- 
+    GALLERY
+    -->
+    <section class="gallery" id="gallery">
+        <div class="row g-3 w-100">
+            <div class="col-lg-6">
+                <div class="img-one img-gallarey">
+                    <img src="./assets/images/gallery1.png.webp" class="img-fluid" alt="">
+                    <div class="shape">
+                        <div class="content">
+                            <div>
+                                <div class="muscles"></div>
+                                <h1 class="text-capitalize fs-4 mt-2">best fitness gallery</h1>
+                                <p>Fitness, Body</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="row h-100 align-content-between g-2">
+                    <div class="col-lg-6">
+                        <div class="img-gallarey">
+                            <img src="./assets/images/gallery2.png.webp" class="img-fluid" alt="">
+                            <div class="shape">
+                                <div class="content">
+                                    <div>
+                                        <div class="muscles"></div>
+                                        <h1 class="text-capitalize fs-4 mt-2">best fitness gallery</h1>
+                                        <p>Fitness, Body</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="img-gallarey">
+                            <img src="./assets/images/gallery3.png.webp" class="img-fluid" alt="">
+                            <div class="shape">
+                                <div class="content">
+                                    <div>
+                                        <div class="muscles"></div>
+                                        <h1 class="text-capitalize fs-4 mt-2">best fitness gallery</h1>
+                                        <p>Fitness, Body</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="img-gallarey">
+                            <img src="./assets/images/gallery4.png.webp" class="img-fluid" alt="">
+                            <div class="shape">
+                                <div class="content">
+                                    <div>
+                                        <div class="muscles"></div>
+                                        <h1 class="text-capitalize fs-4 mt-2">best fitness gallery</h1>
+                                        <p>Fitness, Body</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="img-gallarey">
+                            <img src="./assets/images/gallery5.png.webp" class="img-fluid" alt="">
+                            <div class="shape">
+                                <div class="content">
+                                    <div>
+                                        <div class="muscles"></div>
+                                        <h1 class="text-capitalize fs-4 mt-2">best fitness gallery</h1>
+                                        <p>Fitness, Body</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 
+        TEAM
+    -->
+    <section class="team mw-100" id="team">
+        <div class="container-fluid">
+            <div class="w-100 pb-5">
+                <p class="white-p mb-3">OUR TEAM MAMBERS</p>
+                <div class="row align-items-cente w-100">
+                    <div class="col-lg-8">
+                        <h1 class="main-h1 w-75 m-0">OUR MOST EXPRIENCED TRAINERS</h1>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="btn-parent d-flex justify-content-lg-end w-100">
+                            <a href="#"><button class="btn-main text-uppercase mt-3">more services</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-3 w-100">
+                <div class="col-lg-3 col-md-6">
+                        <div class="box">
+                            <img src="./assets/images/team1.png.webp" class="w-100 img-fluid" alt="...">
+                            <div class="box-bg">
+                                <div class="box-conten text-start">
+                                    <p class="white-p mb-3">Creative derector</p>
+                                    <p class="fs-3 text-white">
+                                        Jhon Sunsaev
+                                    </p>
+                                </div>
+                                <div class="social">
+                                    <div class="loader">
+                                        <span class="loader_ball"><i class="fa-brands fa-facebook-f fs-6"></i></span>
+                                        <span class="loader_ball"><i class="fa-brands fa-twitter fs-6"></i></span>
+                                        <span class="loader_ball"><i class="fa-solid fa-globe fs-6"></i></span>
+                                        <span class="loader_ball"><i class="fa-brands fa-instagram fs-6"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                        <div class="box">
+                            <img src="./assets/images/team2.png.webp" class="w-100 img-fluid" alt="...">
+                            <div class="box-bg">
+                                <div class="box-conten text-start">
+                                    <p class="white-p mb-3">Creative derector</p>
+                                    <p class="fs-3 text-white">
+                                        Jhon Sunsaev
+                                    </p>
+                                </div>
+                                <div class="social">
+                                    <div class="loader">
+                                        <span class="loader_ball"><i class="fa-brands fa-facebook-f fs-6"></i></span>
+                                        <span class="loader_ball"><i class="fa-brands fa-twitter fs-6"></i></span>
+                                        <span class="loader_ball"><i class="fa-solid fa-globe fs-6"></i></span>
+                                        <span class="loader_ball"><i class="fa-brands fa-instagram fs-6"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                        <div class="box">
+                            <img src="./assets/images/team3.png.webp" class="w-100 img-fluid" alt="...">
+                            <div class="box-bg">
+                                <div class="box-conten text-start">
+                                    <p class="white-p mb-3">Creative derector</p>
+                                    <p class="fs-3 text-white">
+                                        Jhon Sunsaev
+                                    </p>
+                                </div>
+                                <div class="social">
+                                    <div class="loader">
+                                        <span class="loader_ball"><i class="fa-brands fa-facebook-f fs-6"></i></span>
+                                        <span class="loader_ball"><i class="fa-brands fa-twitter fs-6"></i></span>
+                                        <span class="loader_ball"><i class="fa-solid fa-globe fs-6"></i></span>
+                                        <span class="loader_ball"><i class="fa-brands fa-instagram fs-6"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                        <div class="box">
+                            <img src="./assets/images/team4.jpg" class="w-100 img-four img-fluid" alt="...">
+                            <div class="box-bg">
+                                <div class="box-conten text-start">
+                                    <p class="white-p mb-3">Creative derector</p>
+                                    <p class="fs-3 text-white">
+                                        Jhon Sunsaev
+                                    </p>
+                                </div>
+                                <div class="social">
+                                    <div class="loader">
+                                        <span class="loader_ball"><i class="fa-brands fa-facebook-f fs-6"></i></span>
+                                        <span class="loader_ball"><i class="fa-brands fa-twitter fs-6"></i></span>
+                                        <span class="loader_ball"><i class="fa-solid fa-globe fs-6"></i></span>
+                                        <span class="loader_ball"><i class="fa-brands fa-instagram fs-6"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 
+        OFFER
+    -->
+    <section class="offer mw-100" id="offer">
+        <div class="container-fluid pt-5 pb-5">
+            <div class="row align-items-center h-100 pt-5 pb- w-100">
+                <div class="col-lg-8">
+                    <div class="text-offer">
+                        <h1 class="main-h1 text-white w-75 m-0">April membership offer available Now</h1>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="btn-parent d-flex justify-content-lg-end w-100">
+                        <a href="#"><button class="btn-main text-uppercase mt-3">more services</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 
+        SCHEDULE
+    -->
+    <section class="schedule mw-100" id="schedule">
+        <div class="container-fluid">
+        <div class="row w-100 mb-3 g-1 flex-row filter_buttons">
+                <div class="col-lg-3  col-sm-6  d-flex flex-row">
+                    <button class="active" data-name="saterday">saterday</button>
+                    <button data-name="sunday">sunday</button>
+                </div>
+                <div class="col-lg-3 col-sm-6 d-flex flex-row">
+                    <button data-name="monday">monday</button>
+                    <button data-name="tuesday">tuesday</button>
+                </div>
+                <div class="col-lg-3 col-sm-6 d-flex flex-row">
+                    <button data-name="language">language</button>
+                    <button data-name="thursday">thursday</button>
+                </div>
+                <div class="col-lg-3 col-sm-6 ">
+                    <button data-name="friday">friday</button>
+                </div>
+        </div>
+        <div class="filterable_cards row text-center g-3 w-100">
+            <div data-name="monday" class="col-lg-3 col-md-4 col-sm-6  cardd">
+                <div  class="saterday p-5 w-100 d-flex justify-content-center align-items-center flex-column">
+                    <p class="m text-white p-2">6am - 8am</p>
+                    <h3 class="kick">Kick Boxing</h3>
+                    <p class="fs-5">by Jhos Kusam</p>
+                </div>
+            </div>
+            <div data-name="tuesday" class="col-lg-3 col-md-4 col-sm-6  cardd">
+                <div  class="saterday w-100 p-5 d-flex justify-content-center align-items-center flex-column">
+                    <p class="m text-white p-2">6am - 8am</p>
+                    <h3 class="kick">Kick Boxing</h3>
+                    <p class="fs-5">by Jhos Kusam</p>
+                </div>
+            </div>
+            <div data-name="sunday" class="col-lg-3 col-md-4 col-sm-6  cardd">
+                <div  class="saterday w-100 p-5 d-flex justify-content-center align-items-center flex-column">
+                    <p class="m text-white p-2">6am - 8am</p>
+                    <h3 class="kick">Kick Boxing</h3>
+                    <p class="fs-5">by Jhos Kusam</p>
+                </div>
+            </div>
+            <div data-name="language" class="col-lg-3 col-md-4 col-sm-6  cardd">
+                <div  class="saterday w-100 p-5 d-flex justify-content-center align-items-center flex-column">
+                    <p class="m text-white p-2">6am - 8am</p>
+                    <h3 class="kick">Kick Boxing</h3>
+                    <p class="fs-5">by Jhos Kusam</p>
+                </div>
+            </div>
+            <div data-name="thursday" class="col-lg-3 col-md-4 col-sm-6  cardd rounded-0">
+                <div  class="saterday w-100 p-5 d-flex justify-content-center align-items-center flex-column">
+                    <p class="m text-white p-2">6am - 8am</p>
+                    <h3 class="kick">Kick Boxing</h3>
+                    <p class="fs-5">by Jhos Kusam</p>
+                </div>
+            </div>
+            <div data-name="sunday" class="col-lg-3 col-md-4 col-sm-6  cardd">
+                <div  class="saterday w-100 p-5 d-flex justify-content-center align-items-center flex-column">
+                    <p class="m text-white p-2">6am - 8am</p>
+                    <h3 class="kick">Kick Boxing</h3>
+                    <p class="fs-5">by Jhos Kusam</p>
+                </div>
+            </div>
+            <div data-name="friday" class="col-lg-3 col-md-4 col-sm-6  cardd">
+                <div  class="saterday w-100 p-5 d-flex justify-content-center align-items-center flex-column">
+                    <p class="m text-white p-2">6am - 8am</p>
+                    <h3 class="kick">Kick Boxing</h3>
+                    <p class="fs-5">by Jhos Kusam</p>
+                </div>
+            </div>
+            <div data-name="friday" class="col-lg-3 col-md-4 col-sm-6  cardd">
+                <div  class="saterday w-100 p-5 d-flex justify-content-center align-items-center flex-column">
+                    <p class="m text-white p-2">6am - 8am</p>
+                    <h3 class="kick">Kick Boxing</h3>
+                    <p class="fs-5">by Jhos Kusam</p>
+                </div>
+            </div>
+        </div>
+        </div>
+        </section>
+        <!-- 
+        CONTACT
+    -->
+    <section class="contact" id="contact">
+    <div class="container-fluid">
+        <div class="row w-100 h-100 justify-content-md-center g-0">
+            <div class="col-lg-6 col-md-6">
+                <img src="./assets/images/contact_form.png.webp" class="img-fluid h-100" alt="" />
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <div class="contact-form p-3">
+                    <p class="white-p mb-3">CONTACT FORM</p>
+                    <h1 class="main-h1 w-100 mb-3">FEEL FREE TO CONTACT WITH US!</h1>
+                    <form action="#">
+                        <div class="row w-100 mb-3">
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <input type="text" name="name" required placeholder="Name"/>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <input type="tel:" name="phone" required placeholder="phone" />
+                            </div>
+                        </div>
+                        <div class="row w-100 mb-3">
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <select name="Boking" id="">
+                                    <option value="BOXing">Boxing</option>
+                                    <option value="arafath">arafath miya</option>
+                                    <option value="shakil">shakil miya</option>
+                                    <option value="tamim">tamim sharker</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <input type="email" name="email" required placeholder="email" />
+                            </div>
+                        </div>
+                        <textarea name="" required placeholder="message" id="" cols="10" rows="6"></textarea>
+                        <div class="btn-parent d-flex justify-content-start mt-3">
+                            <a href="#"><button class="btn-main text-uppercase">send message</button></a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <!--
+        RECENT
+    -->
+    <section class="recent" id="recent">
+        <div class="container-fluid">
+            <div class="text-center line">
+                <p class="white-pp mb-3">RECENT NEWS FORM BLOG</p>
+                <h1 class="main-h1 mb-3 m-0">GYM TIPS NEWS FOR YOU <br /> THAT SELECTED BY US</h1>
+            </div>
+            <div class="row w-100 gy-3">
+                <div class="col-lg-6 col-md-6">
+                    <div class="card rounded-0 border-0">
+                        <div class="position-relative holder">
+                            <img src="assets/images/blog1.png.webp" class="card-img-top img-fluid" alt="...">
+                            <div class="square text-uppercase fs-3 p-4 fw-medium">24 now</div>
+                        </div>
+                        <div class="card-body p-4">
+                            <p class="white-p mb-3">RECENT NEWS FORM BLOG</p>
+                            <p class="main-p w-75 m-0">Footprints in Time is perfect House in Kurashiki</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="card rounded-0 border-0" >
+                        <div class="position-relative holder">
+                            <img src="assets/images/blog2.png.webp" class="card-img-top img-fluid" alt="...">
+                            <div class="square text-uppercase fs-3 p-4 fw-medium">24 now</div>
+                        </div>
+                        <div class="card-body p-4">
+                            <p class="white-p mb-3">RECENT NEWS FORM BLOG</p>
+                            <p class="main-p w-75 m-0">Footprints in Time is perfect House in Kurashiki</p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+    <!-- 
+        Footer
+    -->
+    <footer>
+        <div class="container-fluid pt-5 pb-5">
+            <div class="row w-100 align-items-center h-100 pt-5 pb-5 gy-4">
+                <div class="col-lg-3">
+                    <ul> 
+                        <h2>comany</h2>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">comany</a></li>
+                        <li><a href="#">press & blog</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <ul> 
+                        <h2>open hour</h2>
+                        <li><a href="#">Monday 11am-7pm</a></li>
+                        <li><a href="#">Tuesday-Friday 11am-8pm</a></li>
+                        <li><a href="#">Saturday 10am-6pm</a></li>
+                        <li><a href="#">Sunday 11am-6pm</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <ul> 
+                        <h2>RESOURCES</h2>
+                        <li><a href="#">Home Insurance</a></li>
+                        <li><a href="#">Travel Insurance</a></li>
+                        <li><a href="#">Car Insurance</a></li>
+                        <li><a href="#">Business Insurance</a></li>
+                        <li><a href="#">Heal Insurance</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <ul> 
+                        <h2>RESOURCES</h2>
+                        <li><div href="#">
+                            <img src="./assets/images/logo.png.webp" class="img-fluid mt-3" alt="">
+                        </div></li>
+                        <li><div href="#">
+                            <p class="pt-3 pb-3">GThe trade war currently ensuing between te US anfd several natxions around thdhe globe, most fiercely with.</p>
+                        </div></li>
+                        <li><div href="#">
+                            <div class="social-media d-flex fs-4">
+                                <i class="fa-brands fa-facebook-f me-3"></i>
+                                <i class="fa-brands fa-twitter me-3"></i>
+                                <i class="fa-solid fa-globe me-3"></i>
+                                <i class="fa-brands fa-instagram me-3"></i>
+                            </div>
+                        </div></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copy-right text-center text-white fs-4">
+                <p>Copyright &copy;2023 All rights reserved | This template is made with &hearts; by Colorlib</p>
+            </div>
+        </div>
+    </footer>
+    <script src="./assets/js/all.min.js"></script>
+    <script src="./assets/js/bootstrap.bundle.js.map"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
