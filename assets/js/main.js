@@ -27,7 +27,7 @@ filterButtons.forEach(button => button.addEventListener("click", filterCards));
 let loader = document.getElementById("preloader");
 window.onload = setTimeout(()=> {
     loader.style.display = "none";
-}, 2000);
+}, 3000);
 
 let btnScroll = document.getElementById("scroller");
 
